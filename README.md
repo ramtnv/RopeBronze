@@ -3,8 +3,6 @@
 Rope implements the insightface inswapper_128 model with a helpful GUI.
 ### [Discord](https://discord.gg/EcdVAFJzqp)
 
-### [Donate](https://www.paypal.com/donate/?hosted_button_id=Y5SB9LSXFGRF2)
-
 ### ${{\color{Goldenrod}{\textsf{Last Updated 2026-07-11}}}}$ ###
 ### ${{\color{Goldenrod}{\textsf{Welcome to Rope-Bronze!}}}}$ ###
 
@@ -32,7 +30,7 @@ pip install -r requirements.lock.txt
 Also, copy models from the Rope-Bronze Models Release to somewhere on your drive. In settings, select the folder they were copied to (you have to unzip them).
 
 ### Disclaimer: ###
-Rope is a personal project that I'm making available to the community as a thank you for all of the contributors ahead of me.
+Rope-Bronze is maintained by RAMTNV.
 I've copied the disclaimer from [Swap-Mukham](https://github.com/harisreedhar/Swap-Mukham) here since it is well-written and applies 100% to this repo.
  
 I would like to emphasize that our swapping software is intended for responsible and ethical use only. I must stress that users are solely responsible for their actions when using our software.

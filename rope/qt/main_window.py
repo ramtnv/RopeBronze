@@ -1161,29 +1161,12 @@ class MainWindow(QMainWindow):
         layout.setContentsMargins(8, 4, 8, 4)
         layout.setSpacing(8)
 
-        # Bottom-left: PayPal donation hotlink, replacing the old hover-help
-        # / status text. Rich-text QLabel; setOpenExternalLinks opens the
-        # URL in the default browser when the link is clicked.
-        donate = QLabel(
-            '<a href="https://www.paypal.com/donate/'
-            '?hosted_button_id=Y5SB9LSXFGRF2" '
-            'style="color:#E5B854;text-decoration:none;">'
-            '♥ Support Rope — Donate via PayPal</a>'
-        )
-        donate.setOpenExternalLinks(True)
-        donate.setTextInteractionFlags(Qt.TextBrowserInteraction)
-        donate.setCursor(Qt.PointingHandCursor)
-        donate.setStyleSheet("font-size: 9pt;")
-        donate.setToolTip("Opens the PayPal donation page in your browser")
-        layout.addWidget(donate)
-
         layout.addStretch(1)
 
         # The hover-info / status label is retained as a hidden sink: the
         # many widgets that call add_info_frame(self._tooltip_label) plus
-        # the ~40 setText(...) status updates keep working, but nothing is
-        # rendered — the help text is no longer shown (the donation link
-        # takes its place in the bottom bar).
+        # the ~40 setText(...) status updates keep working without rendering
+        # the help text in the bottom bar.
         self._tooltip_label = Text(text="", tier=1)
         self._tooltip_label.setParent(bar)
         self._tooltip_label.setVisible(False)
